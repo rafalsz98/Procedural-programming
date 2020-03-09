@@ -1,0 +1,13 @@
+In most languages, some character sequences have the lexical form of an identifier but are known as keywords 
+– for example, if is frequently a keyword for an if clause, but lexically is of the same form as ig or foo namely a sequence of letters. 
+This overlap can be handled in various ways: these may be forbidden from being identifiers – which simplifies tokenization and parsing – 
+in which case they are reserved words; 
+they may both be allowed but distinguished in other ways, 
+such as via stropping; or keyword sequences may be allowed as identifiers and which sense is determined from context,
+which requires a context-sensitive lexer. Non-keywords may also be reserved words (forbidden as identifiers), 
+particularly for forward compatibility, in case a word may become a keyword in future. In a few languages,
+e.g., PL/1, the distinction is not clear. 
+Just to simply test the identification:
+_abc
+__2_.
+2fdb;
